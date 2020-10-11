@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        
+        
+
+       function add(){
+        var n1 = parseFloat(document.getElementById("v1").value);
+        var n2 = parseFloat(document.getElementById("v2").value);
+        var add = document.getElementById("+").value;
+        if(add==="+"){
+               document.getElementById("add").value=n1+n2;
+           }
+       }  
+
+       function sub(){
+        var n1 = parseFloat(document.getElementById("v1").value);
+        var n2 = parseFloat(document.getElementById("v2").value);
+        var sub = document.getElementById("-").value;
+        if(sub==="-"){
+               document.getElementById("sub").value=n1-n2;
+           }
+       } 
+
+       function mult(){
+        var n1 = parseFloat(document.getElementById("v1").value);
+        var n2 = parseFloat(document.getElementById("v2").value);
+        var mult = document.getElementById("*").value;
+        if(mult==="*"){
+               document.getElementById("mult").value=n1*n2;
+           }
+       } 
+
+       function div(){
+        var n1 = parseFloat(document.getElementById("v1").value);
+        var n2 = parseFloat(document.getElementById("v2").value);
+        var div = document.getElementById("/").value;
+         
+        if(div==="/"){
+               document.getElementById("div").value=n1/n2;
+           }
+       } 
+        
+        
+       
+       
+       
+
+           
+
+          
+
+          
+      
+
+
+
+    </script>
+
+
+
+
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <br>
+    <br>
+    Frist Value: <input type="text" id="v1" maxlength="7" value="0">
+    <br>
+    <br>
+    2nd Value: <input type="text" id="v2" maxlength="7" value="0">
+    <br>
+    <br>
+    <input type="button" id="+" value="+" onclick="add()"> 
+    <input type="text" id="add" placeholder="Value">
+    <br>
+    <br>
+    <input type="button" id="-" value="-" onclick="sub()"> 
+    <input type="text" id="sub" placeholder="Value">
+    <br>
+    <br>
+    <input type="button" id="*" value="*" onclick="mult()"> 
+    <input type="text" id="mult" placeholder="Value">
+    <br>
+    <br>
+    <input type="button" id="/" value="/" onclick="div()"> 
+    <input type="text" id="div" placeholder="Value">
+
+</body>
+</html>
